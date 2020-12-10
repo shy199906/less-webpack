@@ -1,0 +1,38 @@
+div {
+  width: 0;
+  height: 0;
+  float: left;
+}
+.one {
+  border: 50px solid transparent;
+  border-top: 50px solid blue;
+}
+.one2 {
+  border: 30px solid transparent;
+  border-top: 30px solid red;
+}
+.tow {
+  border: 20px solid transparent;
+  border-right: 20px solid red;
+}
+.tow2 {
+  border: 30px solid transparent;
+  border-right: 30px solid black;
+}
+.three {
+  border: 40px solid transparent;
+  border-bottom: 40px solid red;
+}
+.three2 {
+  border: 50px solid transparent;
+  border-bottom: 50px solid skyblue;
+}
+.four {
+  border: 20px solid transparent;
+  border-left: 20px solid red;
+}
+.four2 {
+  border: 40px solid transparent;
+  border-left: 40px solid pink;
+}
+

@@ -1,0 +1,52 @@
+// 三种参数写法
+// .mixin(@size,@color,@theDirectionOf){
+//     border: @size solid transparent;
+//     border-@{theDirectionOf}: @size solid @color;
+// }
+// 两种参数写法
+.mixin1(@size,@color){
+    border: @size solid transparent;
+    border-top: @size solid @color;
+}
+.mixin2(@size,@color){
+    border: @size solid transparent;
+    border-right: @size solid @color;
+}
+.mixin3(@size,@color){
+    border: @size solid transparent;
+    border-bottom: @size solid @color;
+}
+.mixin4(@size,@color){
+    border: @size solid transparent;
+    border-left: @size solid @color;
+}
+div{
+    width: 0;
+    height: 0;
+    float: left;
+}
+.one{
+    .mixin1(50px,blue);
+}
+.one2{
+    .mixin1(30px,red);
+}
+.tow{
+    .mixin2(20px,red);
+}
+.tow2{
+    .mixin2(30px,black);
+}
+.three{
+    .mixin3(40px,red);
+}
+.three2{
+    .mixin3(50px,skyblue);
+}
+.four{
+    .mixin4(20px,red);
+}
+.four2{
+    .mixin4(40px,pink);
+}
+
